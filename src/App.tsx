@@ -1,7 +1,14 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./pages/homepage/home";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <BrowserRouter>
       <Routes>
