@@ -35,7 +35,7 @@ const Hero = () => {
             data-aos-duration="2000"
             className="text-3xl capitalize font-semibold text-gray-400 mt-5"
           >
-            Hello 👋! I'm Nathan, a React.js/React Native Developer.
+            Hello 👋! I'm Nathan, a React/Next.js Developer.
           </h3>
           <div className="mt-2" data-aos="fade-up" data-aos-duration="2000">
             <MagicButton

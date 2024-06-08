@@ -5,9 +5,11 @@ export default {
     extend: {
       colors: {
         primary: ["#cbacf9"],
+        secondary: ["#000319"],
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        fira: ["Fira Code iScrips", "monoscope"],
       },
     },
   },
