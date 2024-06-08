@@ -40,7 +40,7 @@ const Hero = () => {
           <div className="mt-2" data-aos="fade-up" data-aos-duration="2000">
             <MagicButton
               title="Explore projects"
-              icon={<IoPaperPlane />}
+              icon={<IoPaperPlane className="animate-bounce" />}
               position="right"
             />
           </div>

@@ -48,6 +48,8 @@ const Navbar: React.FC = () => {
 
           return (
             <Link
+              data-aos="fade-in"
+              data-aos-duration="2000"
               key={index}
               to={path}
               className={`text-base font-poppins duration-300 ease-in hover:text-primary-0 capitalize ${
