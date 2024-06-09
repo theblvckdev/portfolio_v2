@@ -21,7 +21,7 @@ const Hero = () => {
             data-aos-duration="2000"
             className="xl:text-8xl lg:text-7xl md:text-5xl text-3xl capitalize font-bold text-white"
           >
-            Transforming Concepts into
+            Transforming Ideas Into
           </h1>
           <h1
             data-aos="fade-left"
@@ -33,9 +33,9 @@ const Hero = () => {
           <h3
             data-aos="fade-up"
             data-aos-duration="2000"
-            className="lg:text-2xl md:text-xl text-sm capitalize font-code text-gray-400 mt-5"
+            className="lg:text-2xl md:text-xl text-base capitalize font-code text-gray-400 mt-5"
           >
-            Hello👋! I'm Nathan, a React/Next.js Developer.
+            Hello👋! I'm Nathan, a React/Next.js Frontend Developer.
           </h3>
           <div className="mt-2" data-aos="fade-up" data-aos-duration="2000">
             <MagicButton

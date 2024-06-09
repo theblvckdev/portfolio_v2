@@ -75,18 +75,18 @@ const Navbar: React.FC = () => {
         })}
       </nav>
 
-      <nav className="fixed shadow-xl md:hidden z-50 top-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-30 flex items-center justify-between backdrop-blur-sm md:p-5 p-3 rounded-full">
+      <nav className="fixed shadow-xl md:hidden z-50 bottom-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-30 flex items-center justify-between backdrop-blur-sm md:p-5 p-3 rounded-full">
         {navbarLinks.map((data, index) => {
           const { icon, path, isOpen } = data;
 
           return (
             <Link
-              data-aos="fade-in"
-              data-aos-duration="2000"
               key={index}
               to={path}
-              className={`h-[40px] w-[40px] flex items-center justify-center rounded-full hover:bg-primary-0 hover:text-secondary-0 font-code duration-300 text-center ease-in text-white capitalize ${
-                isOpen ? "bg-primary-0 text-secondary-0" : "bg-transparent"
+              className={`h-[40px] w-[40px] flex items-center justify-center rounded-full hover:bg-primary-0 hover:text-secondary-0 font-code duration-300 text-center ease-in capitalize ${
+                isOpen
+                  ? "bg-primary-0 text-secondary-0"
+                  : "bg-transparent text-white"
               }`}
             >
               {icon}
