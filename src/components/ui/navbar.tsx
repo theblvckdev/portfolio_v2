@@ -2,9 +2,9 @@ import React, { ReactElement } from "react";
 import {
   IoBriefcaseOutline,
   IoHomeOutline,
+  IoMailOutline,
   IoMegaphoneOutline,
   IoPersonOutline,
-  IoPhonePortraitOutline,
 } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -48,16 +48,16 @@ const navbarLinks: NavbarLinksTypes[] = [
     name: "Contact",
     path: "/contact",
     isOpen: false,
-    icon: <IoPhonePortraitOutline className="text-2xl" />,
+    icon: <IoMailOutline className="text-2xl" />,
   },
 ];
 
 const Navbar: React.FC = () => {
   return (
     <>
-      <nav className="fixed shadow-xl md:flex z-50 top-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-30 hidden items-center justify-evenly backdrop-blur-sm p-5 rounded-full">
+      <nav className="fixed shadow-xl md:flex z-50 top-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-30 hidden items-center justify-between backdrop-blur-sm p-5 rounded-full">
         {navbarLinks.map((data, index) => {
-          const { name, path, isOpen } = data;
+          const { name, path, isOpen, icon } = data;
 
           return (
             <Link
@@ -65,11 +65,11 @@ const Navbar: React.FC = () => {
               data-aos-duration="2000"
               key={index}
               to={path}
-              className={`text-sm font-code duration-300 text-center ease-in hover:text-primary-0 capitalize ${
+              className={`text-sm font-code flex items-center gap-2 duration-300 text-center ease-in hover:text-primary-0 capitalize ${
                 isOpen ? "text-primary-0" : "text-white"
               }`}
             >
-              0.{index + 1} {name}
+              {icon} <div className="text-sm">{name}</div>
             </Link>
           );
         })}
