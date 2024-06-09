@@ -9,7 +9,7 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        fira: ["Fira Code iScrips", "monoscope"],
+        code: ["Fira Code", "monoscope"],
       },
     },
   },
