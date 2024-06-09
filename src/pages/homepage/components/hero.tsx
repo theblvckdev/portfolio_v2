@@ -8,7 +8,7 @@ const Hero = () => {
       <section className="h-screen w-screen flex items-center justify-center relative">
         <div className="absolute top-0 left-0 h-full w-full -z-10">
           <img
-            data-aos="fade-in"
+            data-aos="fade-down"
             data-aos-duration="2000"
             src={Bg}
             className="w-full h-full"

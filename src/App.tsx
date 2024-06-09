@@ -7,7 +7,9 @@ import Navbar from "./components/ui/navbar";
 
 const App = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
     AOS.refresh();
   }, []);
   return (

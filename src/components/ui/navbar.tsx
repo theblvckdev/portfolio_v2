@@ -55,7 +55,7 @@ const navbarLinks: NavbarLinksTypes[] = [
 const Navbar: React.FC = () => {
   return (
     <>
-      <nav className="fixed shadow-xl md:flex z-50 top-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-30 hidden items-center justify-between backdrop-blur-sm p-5 rounded-full">
+      <nav className="fixed shadow-xl md:flex z-50 top-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-70 hidden items-center justify-between backdrop-blur-sm p-5 rounded-full">
         {navbarLinks.map((data, index) => {
           const { name, path, isOpen, icon } = data;
 
