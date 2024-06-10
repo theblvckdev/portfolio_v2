@@ -6,7 +6,6 @@ import {
   IoMegaphoneOutline,
   IoPersonOutline,
 } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 interface NavbarLinksTypes {
   name: string;
@@ -18,35 +17,35 @@ interface NavbarLinksTypes {
 const navbarLinks: NavbarLinksTypes[] = [
   {
     name: "Home",
-    path: "/",
+    path: "#",
     isOpen: true,
     icon: <IoHomeOutline className="text-2xl" />,
   },
 
   {
     name: "About",
-    path: "/about",
+    path: "#about",
     isOpen: false,
     icon: <IoPersonOutline className="text-2xl" />,
   },
 
   {
     name: "Projects",
-    path: "/projects",
+    path: "#projects",
     isOpen: false,
     icon: <IoBriefcaseOutline className="text-2xl" />,
   },
 
   {
     name: "Reviews",
-    path: "/reviews",
+    path: "#reviews",
     isOpen: false,
     icon: <IoMegaphoneOutline className="text-2xl" />,
   },
 
   {
     name: "Contact",
-    path: "/contact",
+    path: "#contact",
     isOpen: false,
     icon: <IoMailOutline className="text-2xl" />,
   },
@@ -60,17 +59,17 @@ const Navbar: React.FC = () => {
           const { name, path, isOpen, icon } = data;
 
           return (
-            <Link
+            <a
               data-aos="fade-in"
               data-aos-duration="2000"
               key={index}
-              to={path}
+              href={path}
               className={`text-sm font-code flex items-center gap-2 duration-300 text-center ease-in hover:text-primary-0 capitalize ${
                 isOpen ? "text-primary-0" : "text-white"
               }`}
             >
               {icon} <div className="text-sm">{name}</div>
-            </Link>
+            </a>
           );
         })}
       </nav>
@@ -80,9 +79,9 @@ const Navbar: React.FC = () => {
           const { icon, path, isOpen } = data;
 
           return (
-            <Link
+            <a
               key={index}
-              to={path}
+              href={path}
               className={`h-[40px] w-[40px] flex items-center justify-center rounded-full hover:bg-primary-0 hover:text-secondary-0 font-code duration-300 text-center ease-in capitalize ${
                 isOpen
                   ? "bg-primary-0 text-secondary-0"
@@ -90,7 +89,7 @@ const Navbar: React.FC = () => {
               }`}
             >
               {icon}
-            </Link>
+            </a>
           );
         })}
       </nav>

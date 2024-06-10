@@ -1,9 +1,9 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Homepage from "./pages/homepage/home";
 import { useEffect } from "react";
 import Navbar from "./components/ui/navbar";
+import Hero from "./components/hero";
+import Grid from "./components/gird";
 
 const App = () => {
   useEffect(() => {
@@ -13,12 +13,11 @@ const App = () => {
     AOS.refresh();
   }, []);
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-      </Routes>
-    </BrowserRouter>
+      <Hero />
+      <Grid />
+    </>
   );
 };
 

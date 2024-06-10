@@ -1,6 +1,6 @@
 // import { IoPaperPlane } from "react-icons/io5";
-import Bg from "../../../assets/images/bg.png";
-import MagicButton from "../../../components/ui/magic_button";
+import Bg from "../assets/images/bg.png";
+import MagicButton from "./ui/magic_button";
 
 const Hero = () => {
   return (

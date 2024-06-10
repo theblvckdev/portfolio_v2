@@ -4,12 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #000319;
-  background-image: url("../svgs/grid.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  overflow-x: hidden;
-  background-attachment: fixed;
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+
+  body {
+    background-color: #000319;
+    background-image: url("../svgs/grid.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+  }
 }

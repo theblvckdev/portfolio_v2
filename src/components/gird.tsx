@@ -1,13 +1,13 @@
 import React from "react";
-import GridBox from "../../../components/grid_box";
-import CommunicationImage from "../../../assets/images/bg-grid.jpg";
-import WorldMap from "../../../assets/svgs/World Map.svg";
-import CodeImage from "../../../assets/svgs/b5.svg";
-import ReactSVG from "../../../assets/svgs/re.svg";
-import NextSVG from "../../../assets/svgs/next.svg";
-import TailwindSVG from "../../../assets/svgs/tail.svg";
-import TypescriptSVG from "../../../assets/svgs/ts.svg";
-import JavascriptSVG from "../../../assets/svgs/js.svg";
+import GridBox from "./ui/grid_box";
+import CommunicationImage from "../assets/images/bg-grid.jpg";
+import WorldMap from "../assets/svgs/World Map.svg";
+import CodeImage from "../assets/svgs/b5.svg";
+import ReactSVG from "../assets/svgs/re.svg";
+import NextSVG from "../assets/svgs/next.svg";
+import TailwindSVG from "../assets/svgs/tail.svg";
+import TypescriptSVG from "../assets/svgs/ts.svg";
+import JavascriptSVG from "../assets/svgs/js.svg";
 
 interface TechStackTypes {
   imageURL: string;
@@ -44,12 +44,15 @@ const techStack: TechStackTypes[] = [
 const Grid: React.FC = () => {
   return (
     <>
-      <section className="py-[5rem] max-w-7xl mx-auto xl:px-0 md:px-5 px-3">
+      <section
+        id="about"
+        className="py-[5rem] max-w-7xl mx-auto xl:px-0 md:px-5 px-3"
+      >
         <div className="flex xl:flex-row flex-col lg:gap-10 gap-5">
           <div className="basis-2/3">
             <GridBox
               fadeDirection="fade-up"
-              fadeDuration="2000"
+              fadeDuration="1000"
               height="h-full"
               width="w-full"
               additionalClasses="relative overflow-hidden xl:h-full lg:h-[400px] h-[300px] w-full"
@@ -67,8 +70,6 @@ const Grid: React.FC = () => {
 
                   <div className="absolute bottom-0 left-0 md:p-10 p-5 z-10 max-w-2xl w-full">
                     <h3
-                      data-aos="fade-in"
-                      data-aos-duration="2000"
                       style={{ lineHeight: "50px" }}
                       className="text-white xl:text-[45px] md:text-4xl text-2xl font-semibold font-poppins"
                     >
@@ -88,7 +89,7 @@ const Grid: React.FC = () => {
                 width="w-full"
                 additionalClasses="relative bg-secondary-0 flex items-center p-6 overflow-hidden"
                 fadeDirection="fade-up"
-                fadeDuration="2000"
+                fadeDuration="1000"
                 gridBody={
                   <>
                     <div className="absolute top-0 left-0 -z-10 w-full h-full">
@@ -110,7 +111,7 @@ const Grid: React.FC = () => {
                 width="w-full"
                 additionalClasses="relative bg-secondary-0 flex flex-col justify-center p-6 overflow-hidden"
                 fadeDirection="fade-up"
-                fadeDuration="2000"
+                fadeDuration="1000"
                 gridBody={
                   <>
                     <div className="absolute top-10 right-0 -z-10 w-[300px] h-[200px]">
