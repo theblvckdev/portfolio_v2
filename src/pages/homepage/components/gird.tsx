@@ -69,6 +69,7 @@ const Grid: React.FC = () => {
                     <h3
                       data-aos="fade-in"
                       data-aos-duration="2000"
+                      style={{ lineHeight: "50px" }}
                       className="text-white xl:text-[45px] md:text-4xl text-2xl font-semibold font-poppins"
                     >
                       I prioritize client collaboration, fostering open
