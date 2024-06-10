@@ -19,14 +19,14 @@ const Hero = () => {
           <h1
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="xl:text-8xl lg:text-7xl md:text-5xl text-3xl capitalize font-bold text-white"
+            className="xl:text-8xl lg:text-7xl md:text-5xl text-5xl capitalize md:font-bold font-semibold text-white"
           >
             Transforming Ideas Into
           </h1>
           <h1
             data-aos="fade-left"
             data-aos-duration="2000"
-            className="xl:text-8xl lg:text-7xl md:text-5xl text-3xl capitalize font-bold text-white"
+            className="xl:text-8xl lg:text-7xl md:text-5xl text-5xl capitalize md:font-bold font-semibold text-white"
           >
             Seamless <span className="text-primary-0">User Experiences</span>
           </h1>
