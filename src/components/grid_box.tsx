@@ -22,7 +22,7 @@ const GridBox = ({
       <div
         data-aos={fadeDirection}
         data-aos-duration={fadeDuration}
-        className={`ring-1 ring-gray-800 rounded-3xl p-5 ${height} ${width} ${additionalClasses}`}
+        className={`ring-1 ring-gray-800 lg:rounded-3xl rounded-2xl p-5 ${height} ${width} ${additionalClasses}`}
       >
         {gridBody}
       </div>

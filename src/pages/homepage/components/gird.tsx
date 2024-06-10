@@ -44,15 +44,15 @@ const techStack: TechStackTypes[] = [
 const Grid: React.FC = () => {
   return (
     <>
-      <section className="py-[5rem] max-w-7xl mx-auto">
-        <div className="flex gap-10">
+      <section className="py-[5rem] max-w-7xl mx-auto xl:px-0 md:px-5 px-3">
+        <div className="flex xl:flex-row flex-col lg:gap-10 gap-5">
           <div className="basis-2/3">
             <GridBox
               fadeDirection="fade-up"
               fadeDuration="2000"
               height="h-full"
               width="w-full"
-              additionalClasses="relative overflow-hidden"
+              additionalClasses="relative overflow-hidden xl:h-full lg:h-[400px] h-[300px] w-full"
               gridBody={
                 <>
                   <div className="absolute top-0 -z-10 left-0 w-full h-full">
@@ -65,11 +65,11 @@ const Grid: React.FC = () => {
 
                   <div className="absolute top-0 -z-10 left-0 w-full h-full bg-black bg-opacity-70"></div>
 
-                  <div className="absolute bottom-0 left-0 p-10 z-10 max-w-2xl w-full">
+                  <div className="absolute bottom-0 left-0 md:p-10 p-5 z-10 max-w-2xl w-full">
                     <h3
                       data-aos="fade-in"
                       data-aos-duration="2000"
-                      className="text-white text-5xl font-semibold font-poppins"
+                      className="text-white xl:text-[45px] md:text-4xl text-2xl font-semibold font-poppins"
                     >
                       I prioritize client collaboration, fostering open
                       communication
@@ -81,7 +81,7 @@ const Grid: React.FC = () => {
           </div>
 
           <div className="basis-1/3">
-            <div className="flex flex-col gap-y-10">
+            <div className="flex xl:flex-col md:flex-row flex-col lg:gap-y-10 gap-5">
               <GridBox
                 height="h-[200px]"
                 width="w-full"
@@ -97,7 +97,7 @@ const Grid: React.FC = () => {
                         alt="world map svg"
                       />
                     </div>
-                    <h4 className="text-white text-4xl font-semibold font-poppins">
+                    <h4 className="text-white md:text-4xl text-2xl font-semibold font-poppins">
                       I'm flexible with different time zones
                     </h4>
                   </>
@@ -123,7 +123,7 @@ const Grid: React.FC = () => {
                       <h5 className="text-gray-400 text-base font-poppins">
                         I constantly try to improve
                       </h5>
-                      <h4 className="text-white text-4xl font-semibold font-poppins">
+                      <h4 className="text-white md:text-4xl text-2xl font-semibold font-poppins">
                         My tech stack
                       </h4>
                     </div>
