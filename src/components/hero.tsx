@@ -1,20 +1,10 @@
 // import { IoPaperPlane } from "react-icons/io5";
-import Bg from "../assets/images/bg.png";
 import MagicButton from "./ui/magic_button";
 
 const Hero = () => {
   return (
     <>
-      <section className="h-screen w-screen flex items-center justify-center relative">
-        <div className="absolute top-0 left-0 h-full w-full -z-10">
-          <img
-            data-aos="fade-down"
-            data-aos-duration="2000"
-            src={Bg}
-            className="w-full h-full"
-            alt="bg gradiant image"
-          />
-        </div>
+      <section className="h-screen w-screen flex items-center justify-center relative lg:px-0 md:px-5 px-3">
         <div className="text-center">
           <h1
             data-aos="fade-right"

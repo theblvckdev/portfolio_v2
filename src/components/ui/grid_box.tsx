@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 
 interface ComponentProp {
-  height: string;
+  height?: string;
   width: string;
   additionalClasses?: string;
   gridBody: ReactElement;

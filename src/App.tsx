@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Navbar from "./components/ui/navbar";
 import Hero from "./components/hero";
-import Grid from "./components/gird";
+import Grid from "./components/grid";
 
 const App = () => {
   useEffect(() => {
