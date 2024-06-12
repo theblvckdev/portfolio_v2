@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Zolak - AI Chatbot",
+    "description": "Zolak is an AI Chatbot that uses OpenAI's API to answer prompt questions. Almost like ChatGPT.",
+    "url": null,
+    "tools": [
+      {
+        "name": "Typescript",
+        "image": "/ts.svg"
+      },
+
+      {
+        "name": "Tailwindcss",
+        "image": "/tail.svg"
+      },
+
+      {
+        "name": "Next.js",
+        "image": "/next.svg"
+      }
+    ]
+  },
+
+  {
+    "name": "Logistica",
+    "description": "Front-end template designed to showcase the benefits of optimized logistics.",
+    "url": "https://logistical-new.vercel.app/",
+    "tools": [
+      {
+        "name": "JavaScript",
+        "image": "/js.svg"
+      },
+
+      {
+        "name": "Tailwindcss",
+        "image": "/tail.svg"
+      },
+
+      {
+        "name": "React.js",
+        "image": "/re.svg"
+      }
+    ]
+  },
+
+  {
+    "name": "Space tourism website",
+    "description": "Space tourism website dedicated to promoting and providing information about space tourism",
+    "url": "https://space-tourisim-website.vercel.app/",
+    "tools": [
+      {
+        "name": "JavaScript",
+        "image": "/js.svg"
+      },
+
+      {
+        "name": "Tailwindcss",
+        "image": "/tail.svg"
+      },
+
+      {
+        "name": "React.js",
+        "image": "/re.svg"
+      }
+    ]
+  },
+
+  {
+    "name": "IP Address Tracker",
+    "description": "Discover the preciese location, ISP, and timezone while exploring user-friendly interface.",
+    "url": "https://my-ip-address-tracker-react.vercel.app/",
+    "tools": [
+      {
+        "name": "JavaScript",
+        "image": "/js.svg"
+      },
+
+      {
+        "name": "Tailwindcss",
+        "image": "/tail.svg"
+      },
+
+      {
+        "name": "React.js",
+        "image": "/re.svg"
+      }
+    ]
+  }
+]
