@@ -66,7 +66,7 @@ const Grid: React.FC = () => {
     <>
       <section
         id="about"
-        className="py-[5rem] max-w-7xl mx-auto xl:px-0 md:px-5 px-3"
+        className="md:py-[5rem] py-[3rem] max-w-7xl mx-auto xl:px-0 md:px-5 px-3"
       >
         <div className="flex xl:flex-row flex-col lg:gap-10 gap-5">
           <div className="basis-2/3">
@@ -85,7 +85,7 @@ const Grid: React.FC = () => {
                     />
                   </div>
 
-                  <div className="absolute top-0 -z-10 left-0 w-full h-full bg-black bg-opacity-70"></div>
+                  <div className="absolute top-0 -z-10 left-0 w-full h-full bg-black bg-opacity-60"></div>
 
                   <div className="absolute bottom-0 left-0 md:p-10 p-5 z-10 max-w-xl w-full">
                     <h3
@@ -220,7 +220,7 @@ const Grid: React.FC = () => {
                       Want to us start a project together?
                     </h4>
 
-                    <div className="relative">
+                    <div className="md:mt-0 mt-5">
                       <MagicButton
                         title={
                           copied ? "Email is Copied!" : "Copy my email address"
@@ -233,9 +233,9 @@ const Grid: React.FC = () => {
 
                       <img
                         src={Confeti}
-                        className={`absolute top-0 left-0 h-full object-cover ${
+                        className={`absolute bottom-0 left-[50%] -translate-x-[50%] -z-10 h-[200px] object-cover ${
                           showConfetti ? "block" : "hidden"
-                        } w-full`}
+                        } w-[200px]`}
                         alt="confeti"
                       />
                     </div>

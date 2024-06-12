@@ -9,14 +9,14 @@ const Hero = () => {
           <h1
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="xl:text-8xl lg:text-7xl md:text-5xl text-5xl capitalize md:font-bold font-semibold text-white"
+            className="xl:text-8xl lg:text-7xl md:text-5xl text-5xl capitalize font-bold text-white"
           >
             Transforming Ideas Into
           </h1>
           <h1
             data-aos="fade-left"
             data-aos-duration="2000"
-            className="xl:text-8xl lg:text-7xl md:text-5xl text-5xl capitalize md:font-bold font-semibold text-white"
+            className="xl:text-8xl lg:text-7xl md:text-5xl text-5xl capitalize font-bold text-white"
           >
             Seamless <span className="text-primary-0">User Experiences</span>
           </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
             data-aos-duration="2000"
             className="lg:text-2xl md:text-xl text-base capitalize font-code text-gray-400 mt-5"
           >
-            Hello👋! I'm Nathan, a React/Next.js Frontend Developer.
+            Hello👋! I'm Nathan, a React/Next.js Developer.
           </h3>
           <div className="mt-2" data-aos="fade-up" data-aos-duration="2000">
             <MagicButton
