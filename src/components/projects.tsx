@@ -53,7 +53,11 @@ const Projects = () => {
         </h1>
 
         <div className="mt-10">
-          <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5"
+          >
             {projects.map((data, index) => {
               const { name, description, url, tools, imageURL } = data;
 
