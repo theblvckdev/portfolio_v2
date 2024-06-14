@@ -1,40 +1,40 @@
 import ReviewsCard from "./reviews_card";
-import Profile from "../../assets/svgs/profile.svg";
+import { reviews } from "../../data/reviews";
 
 const InfiniteSlider = () => {
   return (
     <>
-      <div className="whitespace-nowrap relative p-2 w-screen sm:overflow-hidden inline-block slide">
+      <div className="whitespace-nowrap relative md:p-2 w-screen md:before:block md:after:block before:hidden after:hidden sm:overflow-hidden inline-block slide">
         <div className="slider inline-block lg:w-[50%] w-full">
-          <ReviewsCard
-            author="John Doe"
-            content="Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner."
-            occupation="Software Developer"
-            profile={Profile}
-          />
+          {reviews.map((data, index) => {
+            const { author, content, occupation, profile } = data;
 
-          <ReviewsCard
-            author="John Doe"
-            content="Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner."
-            occupation="Software Developer"
-            profile={Profile}
-          />
+            return (
+              <ReviewsCard
+                key={index}
+                author={author}
+                content={content}
+                occupation={occupation}
+                profile={profile}
+              />
+            );
+          })}
         </div>
 
         <div className="slider inline-block lg:w-[50%] w-full">
-          <ReviewsCard
-            author="John Doe"
-            content="Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner."
-            occupation="Software Developer"
-            profile={Profile}
-          />
+          {reviews.map((data, index) => {
+            const { author, content, occupation, profile } = data;
 
-          <ReviewsCard
-            author="John Doe"
-            content="Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner."
-            occupation="Software Developer"
-            profile={Profile}
-          />
+            return (
+              <ReviewsCard
+                key={index}
+                author={author}
+                content={content}
+                occupation={occupation}
+                profile={profile}
+              />
+            );
+          })}
         </div>
       </div>
     </>

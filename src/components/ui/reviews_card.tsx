@@ -14,11 +14,13 @@ const ReviewsCard = ({
   return (
     <>
       <div
-        data-aos="fade-right"
+        data-aos="fade-left"
         data-aos-duration="1000"
-        className="ring-1 ring-gray-800 lg:rounded-3xl rounded-2xl p-10 h-full w-fit overflow-hidden bg-secondary-0 text-white font-poppins inline-block mx-5"
+        className="ring-1 ring-gray-800 lg:rounded-3xl rounded-2xl p-10 h-full w-fit overflow-hidden bg-secondary-0 text-white font-poppins inline-block md:mx-5 mx-3"
       >
-        <p className="text-base text-wrap font-light font-poppins">{content}</p>
+        <p className="md:text-base text-sm text-wrap font-light font-poppins">
+          {content}
+        </p>
 
         <div className="mt-8">
           <div className="flex gap-2 items-center">

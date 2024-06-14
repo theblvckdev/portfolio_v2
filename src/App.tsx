@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import Grid from "./components/grid";
 import Projects from "./components/projects";
 import Reviews from "./components/reviews";
+import Experience from "./components/experience";
 
 const App = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
       <Grid />
       <Projects />
       <Reviews />
+      <Experience />
     </>
   );
 };
