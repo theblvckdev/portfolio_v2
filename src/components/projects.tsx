@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ProjectCard from "./ui/project_card";
-
 interface ToolsTypes {
   name: string;
   image: string;
@@ -48,8 +47,8 @@ const Projects = () => {
           data-aos-duration="1000"
           className="text-center lg:text-5xl md:text-3xl text-2xl font-bold text-white font-poppins capitalize"
         >
-          Showcasing my skills -{" "}
-          <span className="text-primary-0">Recent Projects</span>.
+          Showcasing my skills through{" "}
+          <span className="text-primary-0">Projects</span>.
         </h1>
 
         <div className="mt-10">

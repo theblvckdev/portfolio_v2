@@ -1,5 +1,5 @@
 import { useMotionValue, useSpring, useTransform, motion } from "framer-motion";
-import { IoArrowForwardOutline } from "react-icons/io5";
+import { IoLinkOutline, IoTimeOutline } from "react-icons/io5";
 
 interface ToolsTypes {
   name: string;
@@ -31,13 +31,13 @@ const ProjectCard = ({
   const rotateX = useTransform(
     mouseYSpring,
     [-0.5, 0.5],
-    ["17.5deg", "-17.5deg"]
+    ["9.5deg", "-9.5deg"]
   );
 
   const rotateY = useTransform(
     mouseXSpring,
     [-0.5, 0.5],
-    ["-17.5deg", "17.5deg"]
+    ["-9.5deg", "9.5deg"]
   );
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -67,10 +67,10 @@ const ProjectCard = ({
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ transformStyle: "preserve-3d", rotateX, rotateY }}
-        className="bg-secondary-0 lg:rounded-3xl rounded-2xl ring-1 ring-gray-800"
+        className="bg-secondary-0 p-2 lg:rounded-3xl rounded-2xl ring-1 ring-gray-800"
       >
         <div
-          className="p-3 bg-white bg-opacity-5 backdrop-blur-md  lg:rounded-3xl rounded-2xl"
+          className="p-3 bg-white bg-opacity-5 backdrop-blur-md rounded-2xl shadow-md"
           style={{
             transformStyle: "preserve-3d",
             transform: "translateZ(30px)",
@@ -121,13 +121,18 @@ const ProjectCard = ({
                       url === null ? "cursor-not-allowed" : "cursor-pointer"
                     }`}
                   >
-                    {url === "coming soon" ? (
-                      "Coming soon"
+                    {url === null ? (
+                      <>
+                        <div className="flex items-center gap-2">
+                          <div>Coming soon</div>
+                          <IoTimeOutline />
+                        </div>
+                      </>
                     ) : (
                       <>
                         <div className="flex items-center gap-2">
                           <div>Check Live Site</div>
-                          <IoArrowForwardOutline />
+                          <IoLinkOutline />
                         </div>
                       </>
                     )}

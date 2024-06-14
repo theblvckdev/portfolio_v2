@@ -5,6 +5,7 @@ import Navbar from "./components/ui/navbar";
 import Hero from "./components/hero";
 import Grid from "./components/grid";
 import Projects from "./components/projects";
+import Reviews from "./components/reviews";
 
 const App = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const App = () => {
       <Hero />
       <Grid />
       <Projects />
+      <Reviews />
     </>
   );
 };

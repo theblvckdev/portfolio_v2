@@ -119,7 +119,7 @@ const Grid: React.FC = () => {
                       />
                     </div>
                     <h4 className="text-white md:text-3xl text-2xl font-semibold font-poppins">
-                      I'm flexible with different time zones
+                      I'm flexible with time zones communication
                     </h4>
                   </>
                 }
@@ -201,7 +201,7 @@ const Grid: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="text-white md:text-3xl text-2xl font-semibold font-poppins">
-                        I have a passion for development.
+                        Tech enthusiast with a passion to build.
                       </h4>
                     </div>
                   </>
@@ -217,7 +217,7 @@ const Grid: React.FC = () => {
                 gridBody={
                   <>
                     <h4 className="text-white md:text-3xl text-center text-2xl font-semibold font-poppins">
-                      Want to us start a project together?
+                      Want us to start a project together?
                     </h4>
 
                     <div className="md:mt-0 mt-5">
