@@ -23,6 +23,37 @@ html {
       animation: gradient-animation 18s ease infinite;
     }
 
+    .slide {
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0%;
+        display: block;
+        width: 300px;
+        height: 100%;
+        content: "";
+        z-index: 2;
+      }
+
+      &::before {
+        left: 0;
+        background: linear-gradient(to left, rgba(0, 3, 25, 0), rgb(0, 3, 25));
+      }
+
+      &::after {
+        right: 0;
+        background: linear-gradient(to right, rgba(0, 3, 25, 0), rgb(0, 3, 25));
+      }
+
+      .slider {
+        animation: slide 10s infinite linear;
+      }
+
+      &:hover .slider {
+        animation-play-state: paused;
+      }
+    }
+
     @keyframes gradient-animation {
       0% {
         background-position: 0% 50%;
@@ -32,6 +63,15 @@ html {
       }
       100% {
         background-position: 0% 50%;
+      }
+    }
+
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
       }
     }
   }
