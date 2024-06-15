@@ -31,6 +31,7 @@ const Hero = () => {
             <MagicButton
               title="Explore projects"
               icon={false}
+              linkURL="#projects"
               position="right"
             />
           </div>

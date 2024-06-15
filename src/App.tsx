@@ -7,6 +7,8 @@ import Grid from "./components/grid";
 import Projects from "./components/projects";
 import Reviews from "./components/reviews";
 import Experience from "./components/experience";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +25,8 @@ const App = () => {
       <Projects />
       <Reviews />
       <Experience />
+      <Contact />
+      <Footer />
     </>
   );
 };

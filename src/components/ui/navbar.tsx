@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
         })}
       </nav>
 
-      <nav className="fixed shadow-xl md:hidden z-50 bottom-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-30 flex items-center justify-between backdrop-blur-sm md:p-5 p-3 rounded-full">
+      <nav className="fixed shadow-xl md:hidden z-50 top-0 left-[50%] my-5 -translate-x-[50%] md:max-w-xl max-w-[350px] w-full ring-1 ring-primary-0 bg-secondary-0 bg-opacity-30 flex items-center justify-between backdrop-blur-sm md:p-5 p-3 rounded-full">
         {navbarLinks.map((data, index) => {
           const { icon, path, isOpen } = data;
 
