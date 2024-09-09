@@ -7,7 +7,7 @@ const InfiniteSlider = () => {
       <div className="whitespace-nowrap relative md:p-2 w-screen md:before:block md:after:block before:hidden after:hidden sm:overflow-hidden inline-block slide">
         <div className="slider inline-block lg:w-[50%] w-full">
           {reviews.map((data, index) => {
-            const { author, content, occupation, profile } = data;
+            const { author, content, occupation } = data;
 
             return (
               <ReviewsCard
@@ -15,7 +15,6 @@ const InfiniteSlider = () => {
                 author={author}
                 content={content}
                 occupation={occupation}
-                profile={profile}
               />
             );
           })}
@@ -23,7 +22,7 @@ const InfiniteSlider = () => {
 
         <div className="slider inline-block lg:w-[50%] w-full">
           {reviews.map((data, index) => {
-            const { author, content, occupation, profile } = data;
+            const { author, content, occupation } = data;
 
             return (
               <ReviewsCard
@@ -31,7 +30,6 @@ const InfiniteSlider = () => {
                 author={author}
                 content={content}
                 occupation={occupation}
-                profile={profile}
               />
             );
           })}

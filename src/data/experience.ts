@@ -16,6 +16,12 @@ export const experienceData: ExperienceDataTypes[] = [
   },
 
   {
+    svgURL: SVGURL1,
+    heading: "Frontend Developer Mentor",
+    description: `Mentored over 10 aspiring developers in foundational web development skills.`,
+  },
+
+  {
     svgURL: SVGURL3,
     heading: "Freelance Web Dev Project",
     description: `Led the development of a web app for a client, from initial concept to deployment on app stores`,

@@ -23,14 +23,19 @@
   },
 
   {
-    "name": "Logistica",
-    "description": "Front-end template designed to showcase the benefits of optimized logistics.",
-    "url": "https://logistical-new.vercel.app/",
-    "imageURL": "/Logistica.jpg",
+    "name": "HNG Boilerplate",
+    "description": "HNG Boilerplate is a project I collaborated with other devs while I was an intern in HNG.",
+    "url": "https://bulldozer-php.teams.hng.tech/",
+    "imageURL": "/boilerplate.png",
     "tools": [
       {
-        "name": "JavaScript",
-        "image": "/js.svg"
+        "name": "Typescript",
+        "image": "/ts.svg"
+      },
+
+      {
+        "name": "Next.js",
+        "image": "/next.svg"
       },
 
       {
@@ -39,21 +44,26 @@
       },
 
       {
-        "name": "React.js",
-        "image": "/re.svg"
+        "name": "ShadCN",
+        "image": "/shadcn.svg"
       }
     ]
   },
 
   {
-    "name": "Space tourism website",
-    "description": "Space tourism website dedicated to promoting and providing information about space tourism",
-    "url": "https://space-tourisim-website.vercel.app/",
-    "imageURL": "/space.jpg",
+    "name": "AIforHomework",
+    "description": "AIForHomework is a project I collaborated with other devs while I was an intern in HNG.",
+    "url": "https://aiforhomework.com/",
+    "imageURL": "/ai-homework.png",
     "tools": [
       {
-        "name": "JavaScript",
-        "image": "/js.svg"
+        "name": "Typescript",
+        "image": "/ts.svg"
+      },
+
+      {
+        "name": "Next.js",
+        "image": "/next.svg"
       },
 
       {
@@ -62,21 +72,26 @@
       },
 
       {
-        "name": "React.js",
-        "image": "/re.svg"
+        "name": "ShadCN",
+        "image": "/shadcn.svg"
       }
     ]
   },
 
   {
-    "name": "IP Address Tracker",
-    "description": "Discover the preciese location, ISP, and timezone while exploring user-friendly interface.",
-    "url": "https://my-ip-address-tracker-react.vercel.app/",
-    "imageURL": "/ip.jpg",
+    "name": "Delve",
+    "description": "Delve is a project I collaborated with other devs while I was an intern in HNG.",
+    "url": "https://delve.fun/",
+    "imageURL": "/delv.png",
     "tools": [
       {
-        "name": "JavaScript",
-        "image": "/js.svg"
+        "name": "Typescript",
+        "image": "/ts.svg"
+      },
+
+      {
+        "name": "Next.js",
+        "image": "/next.svg"
       },
 
       {
@@ -85,8 +100,8 @@
       },
 
       {
-        "name": "React.js",
-        "image": "/re.svg"
+        "name": "ShadCN",
+        "image": "/shadcn.svg"
       }
     ]
   }

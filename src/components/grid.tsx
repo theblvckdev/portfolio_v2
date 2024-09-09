@@ -270,7 +270,7 @@ const Grid: React.FC = () => {
                     />
                   </div>
 
-                  <div className="md:p-10 p-5 z-10 flex-col max-w-2xl h-full flex justify-center w-full">
+                  <div className="md:p-10 py-5 px-2 z-10 flex-col max-w-2xl h-full flex justify-center w-full">
                     <h5 className="text-gray-400 text-base font-poppins">
                       The Inside Scoop
                     </h5>

@@ -2,15 +2,9 @@ interface ComponentPropTypes {
   content: string;
   author: string;
   occupation: string;
-  profile: string;
 }
 
-const ReviewsCard = ({
-  author,
-  content,
-  occupation,
-  profile,
-}: ComponentPropTypes) => {
+const ReviewsCard = ({ author, content, occupation }: ComponentPropTypes) => {
   return (
     <>
       <div
@@ -24,14 +18,6 @@ const ReviewsCard = ({
 
         <div className="mt-8">
           <div className="flex gap-2 items-center">
-            <div className="rounded-full h-[50px] w-[50px] overflow-hidden">
-              <img
-                src={profile}
-                className="h-full w-full object-cover"
-                alt={author}
-              />
-            </div>
-
             <div>
               <div className="font-semibold font-poppins">{author}</div>
               <div className="text-sm text-gray-400 font-poppins">
