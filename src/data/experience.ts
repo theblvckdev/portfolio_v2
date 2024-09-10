@@ -11,8 +11,8 @@ interface ExperienceDataTypes {
 export const experienceData: ExperienceDataTypes[] = [
   {
     svgURL: SVGURL1,
-    heading: "Frontend Developer Intern",
-    description: `Helped deliver high-quality, productive code for a diverse array of projects for clients.`,
+    heading: "Frontend Developer",
+    description: `Delivered high-quality, productive code for a diverse array of projects for clients.`,
   },
 
   {
