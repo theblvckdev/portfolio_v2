@@ -4,8 +4,8 @@ import { reviews } from "../../data/reviews";
 const InfiniteSlider = () => {
   return (
     <>
-      <div className="whitespace-nowrap relative md:p-2 w-screen md:before:block md:after:block before:hidden after:hidden sm:overflow-hidden inline-block slide">
-        <div className="slider inline-block lg:w-[50%] w-full">
+      <div className="whitespace-nowrap relative md:p-2 w-screen md:before:block md:after:block before:hidden after:hidden sm:overflow-hidden slide">
+        <div className="slider md:inline-flex w-full">
           {reviews.map((data, index) => {
             const { author, content, occupation } = data;
 
@@ -20,7 +20,7 @@ const InfiniteSlider = () => {
           })}
         </div>
 
-        <div className="slider inline-block lg:w-[50%] w-full">
+        <div className="slider md:inline-flex hidden w-full">
           {reviews.map((data, index) => {
             const { author, content, occupation } = data;
 

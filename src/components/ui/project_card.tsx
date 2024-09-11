@@ -9,7 +9,7 @@ interface ToolsTypes {
 interface ComponentProp {
   name: string;
   description: string;
-  url: string;
+  url: string | undefined;
   imageURL: string;
   tools: ToolsTypes[];
   // Add other fields as necessary

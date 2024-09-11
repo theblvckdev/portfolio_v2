@@ -1,41 +1,20 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { projects } from "../data/projects";
 import ProjectCard from "./ui/project_card";
-interface ToolsTypes {
+export interface ToolsTypes {
   name: string;
   image: string;
 }
 
-interface Project {
+export interface Project {
   name: string;
   description: string;
-  url: string;
+  url: string | undefined;
   imageURL: string;
   tools: ToolsTypes[];
   // Add other fields as necessary
 }
 
 const Projects = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
-
-  useEffect(() => {
-    const getProjectData = async () => {
-      try {
-        const response = await axios.get<Project[]>("/data/projects_data.json");
-        // console.log(response.data);
-        setProjects(response.data);
-      } catch (err) {
-        if (axios.isAxiosError(err)) {
-          console.error("Axios error:", err.message);
-        } else {
-          console.error("Unexpected error:", err);
-        }
-      }
-    };
-
-    getProjectData();
-  }, []);
-
   return (
     <>
       <section

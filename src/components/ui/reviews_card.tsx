@@ -10,9 +10,9 @@ const ReviewsCard = ({ author, content, occupation }: ComponentPropTypes) => {
       <div
         data-aos="fade-left"
         data-aos-duration="1000"
-        className="ring-1 ring-gray-800 lg:rounded-3xl rounded-2xl p-10 h-full w-fit overflow-hidden bg-secondary-0 text-white font-poppins inline-block md:mx-5 mx-3"
+        className="ring-1 ring-gray-800 lg:rounded-3xl rounded-2xl lg:p-10 p-5 w-full overflow-hidden bg-secondary-0 text-white font-poppins inline-block md:mx-5 mx-3"
       >
-        <p className="md:text-base text-sm text-wrap font-light font-poppins">
+        <p className="lg:text-base text-sm text-white font-semibold h-[150px] text-wrap font-code">
           {content}
         </p>
 

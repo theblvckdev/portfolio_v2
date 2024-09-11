@@ -12,8 +12,7 @@ const Reviews = () => {
           data-aos-duration="1000"
           className="text-center lg:text-5xl md:text-3xl text-2xl font-bold text-white font-poppins capitalize"
         >
-          Kind words from{" "}
-          <span className="text-primary-0">satisfied clients</span>.
+          Kind words from <span className="text-primary-0">colleagues</span>.
         </h1>
 
         <div className="mt-10">
