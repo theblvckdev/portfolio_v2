@@ -2,9 +2,15 @@ interface ComponentPropTypes {
   content: string;
   author: string;
   occupation: string;
+  linkedInURL: string | undefined;
 }
 
-const ReviewsCard = ({ author, content, occupation }: ComponentPropTypes) => {
+const ReviewsCard = ({
+  author,
+  content,
+  occupation,
+  linkedInURL,
+}: ComponentPropTypes) => {
   return (
     <>
       <div
@@ -19,8 +25,14 @@ const ReviewsCard = ({ author, content, occupation }: ComponentPropTypes) => {
         <div className="mt-8">
           <div className="flex gap-2 items-center">
             <div>
-              <div className="font-semibold font-poppins">{author}</div>
-              <div className="text-sm text-gray-400 font-poppins">
+              <a
+                href={linkedInURL}
+                target="_blank"
+                className="font-semibold font-poppins"
+              >
+                {author}
+              </a>
+              <div className="text-sm text-gray-400 font-code">
                 {occupation}
               </div>
             </div>
