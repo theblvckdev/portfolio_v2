@@ -9,6 +9,7 @@ import NextSVG from "../assets/svgs/next.svg";
 import TailwindSVG from "../assets/svgs/tail.svg";
 import TypescriptSVG from "../assets/svgs/ts.svg";
 import JavascriptSVG from "../assets/svgs/js.svg";
+import ViteSVG from "/vite.svg";
 import Gridbg from "../assets/svgs/grid-small.svg";
 import MagicButton from "./ui/magic_button";
 import Confeti from "../assets/images/confetti.gif";
@@ -44,6 +45,11 @@ const techStack: TechStackTypes[] = [
   {
     imageURL: JavascriptSVG,
     name: "javascript",
+  },
+
+  {
+    imageURL: ViteSVG,
+    name: "Vite",
   },
 ];
 
