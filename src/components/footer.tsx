@@ -33,7 +33,7 @@ const Footer = () => {
 
             <SocialButton
               icon={<IoLogoInstagram className="text-xl" />}
-              linkUrl="https://www.instagram.com/nathan_who_codes/"
+              linkUrl="https://www.instagram.com/theblvckdev/"
             />
 
             <SocialButton
