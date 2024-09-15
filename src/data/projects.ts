@@ -2,15 +2,15 @@ import { Project } from "../components/projects";
 
 export const projects: Project[] = [
   {
-    name: "Zolak - AI Chatbot",
+    name: "Logistica",
     description:
-      "Zolak is an AI Chatbot that uses OpenAI's API to answer prompt questions. Almost like ChatGPT.",
-    url: undefined,
-    imageURL: "/zolak.jpg",
+      "Logistica is a website template i created using React.js, TailwindCSS and JavaScript",
+    url: "https://logistical-new.vercel.app/",
+    imageURL: "/Logistica.jpg",
     tools: [
       {
-        name: "Typescript",
-        image: "/ts.svg",
+        name: "JavaScript",
+        image: "/js.svg",
       },
 
       {
@@ -19,8 +19,8 @@ export const projects: Project[] = [
       },
 
       {
-        name: "Next.js",
-        image: "/next.svg",
+        name: "React.js",
+        image: "/re.svg",
       },
     ],
   },
